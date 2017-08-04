@@ -1,0 +1,2 @@
+# Check-your-update-set-for-the-latest-version-of-all-objects
+Sometimes it happens that you touch the same business rule/script include/client script in multiple update sets. You might end up with not the latest version if you loose the order in which they have to load on another instance. This script will check your update set if you it has all the latest versions. If not then you can decide to refresh the update set by touch the object again. It will use the sys_mod_count of records to compare.
